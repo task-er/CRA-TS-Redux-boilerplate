@@ -1,4 +1,26 @@
 {
-  "extends": ["stylelint-config-recommended", "stylelint-config-standard"],
-  "rules": {}
+  "plugins": ["stylelint-scss"],
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier-scss"],
+  "rules": {
+    "indentation": 2,
+    "no-extra-semicolons": true,
+    "no-empty-source": null,
+    "declaration-no-important": true,
+    "no-eol-whitespace": true,
+    "selector-class-pattern": null,
+    "declaration-block-trailing-semicolon": "always",
+    "color-no-invalid-hex": true,
+    "font-family-no-duplicate-names": true,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-duplicate-custom-properties": true,
+    "no-duplicate-at-import-rules": true,
+    "media-query-list-comma-newline-after": "always",
+    "rule-empty-line-before": "always-multi-line",
+    "block-opening-brace-newline-before": "never-single-line",
+    "block-opening-brace-newline-after": "always",
+    "block-closing-brace-newline-after": "always",
+    "block-closing-brace-newline-before": "always",
+    "block-opening-brace-space-before": "always"
+  },
+  "ignoreFiles": ["**/node_modules/**"]
 }
